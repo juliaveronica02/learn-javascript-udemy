@@ -108,5 +108,125 @@
 
 // Number challange.
 var dogAge = prompt("How old is your dog?");
-var humanAge = ((dogAge - 2) * 4)+ 21;
+var humanAge = (dogAge - 2) * 4 + 21;
 alert("Your dog is " + humanAge + " years old in human years");
+
+// function challange.
+// function tidak bisa dimulai dengan angka.
+// alert sama dengan console.log. bedanya alert mengeluarkan popup saat perintah dijalankan.
+// sedangkan console.log dijalankan di terminal.
+
+// example 1 using alert.
+// function getMilk() {
+//   alert("leave house");
+//   alert("moveRight");
+//   alert("moveRight");
+//   alert("moveUp");
+//   alert("moveUp");
+//   alert("moveUp");
+//   alert("moveRight");
+//   alert("moveRight");
+//   alert("buyMilk");
+//   alert("moveLeft");
+//   alert("moveLeft");
+//   alert("moveDown");
+//   alert("moveDown");
+//   alert("moveLeft");
+//   alert("enter house");
+// }
+// getMilk();
+// getMilk() untuk menjalankan eksekusi function yang telah dibuat.
+
+// example 2 using console.log().
+// function getMilk() {
+//   console.log("leave house");
+//   console.log("moveRight");
+//   console.log("moveRight");
+//   console.log("moveUp");
+//   console.log("moveUp");
+//   console.log("moveUp");
+//   console.log("moveRight");
+//   console.log("moveRight");
+//   console.log("buyMilk");
+//   console.log("moveLeft");
+//   console.log("moveLeft");
+//   console.log("moveDown");
+//   console.log("moveLeft");
+//   console.log("moveLeft");
+//   console.log("enter house");
+// }
+// getMilk();
+
+// example 3 simple one using function.
+// function Main() {
+//   fourTimesMove();
+//   turnLeft();
+//   fourTimesMove();
+// }
+// function fourTimesMove() {
+//   move();
+//   move();
+//   move();
+//   move();
+// }
+
+// example 4 simple function.
+// function Main() {
+//   putBeeper();
+//   diagonalMoveDirection();
+//   diagonalMoveDirection();
+//   diagonalMoveDirection();
+//   diagonalMoveDirection();
+// }
+// function diagonalMoveDirection() {
+//   move();
+//   turnLeft();
+//   move();
+//   putBeeper();
+//   turnRight();
+// }
+
+// example 5.
+// function main(){
+//     beepersRight();
+//     goUpTurnLeft();
+//     beepersLeft();
+//     goUpTurnRight();
+//        beepersRight();
+//     goUpTurnLeft();
+//     beepersLeft();
+//     goUpTurnRight();
+//        beepersRight();
+//  }
+
+//  function goUpTurnRight() {
+//     turnRight();
+//     move();
+//     turnRight();
+//  }
+
+//  function goUpTurnLeft() {
+//     turnLeft();
+//     move();
+//     turnLeft();
+//  }
+
+//  function beepersRight() {
+//     putBeeper();
+//     move();
+//     move();
+//     putBeeper();
+//     move();
+//     move();
+//     putBeeper();
+//  }
+
+//  function beepersLeft() {
+//     move();
+//     putBeeper();
+//     move();
+//     move();
+//     putBeeper();
+//     move();
+//  }
+
