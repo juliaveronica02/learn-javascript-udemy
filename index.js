@@ -107,9 +107,9 @@
 // alert("Hello, " + capitaliseName);
 
 // Number challange.
-var dogAge = prompt("How old is your dog?");
-var humanAge = (dogAge - 2) * 4 + 21;
-alert("Your dog is " + humanAge + " years old in human years");
+// var dogAge = prompt("How old is your dog?");
+// var humanAge = (dogAge - 2) * 4 + 21;
+// alert("Your dog is " + humanAge + " years old in human years");
 
 // function challange.
 // function tidak bisa dimulai dengan angka.
@@ -198,19 +198,16 @@ alert("Your dog is " + humanAge + " years old in human years");
 //     goUpTurnRight();
 //        beepersRight();
 //  }
-
 //  function goUpTurnRight() {
 //     turnRight();
 //     move();
 //     turnRight();
 //  }
-
 //  function goUpTurnLeft() {
 //     turnLeft();
 //     move();
 //     turnLeft();
 //  }
-
 //  function beepersRight() {
 //     putBeeper();
 //     move();
@@ -220,7 +217,6 @@ alert("Your dog is " + humanAge + " years old in human years");
 //     move();
 //     putBeeper();
 //  }
-
 //  function beepersLeft() {
 //     move();
 //     putBeeper();
@@ -229,4 +225,170 @@ alert("Your dog is " + humanAge + " years old in human years");
 //     putBeeper();
 //     move();
 //  }
+
+// challange function and parameters
+// function getMilk(bottles) {
+// bottles is a parameters.
+//   console.log("leaveHouse");
+//   console.log("moveRight");
+//   console.log("moveRight");
+//   console.log("moveUp");
+//   console.log("moveUp");
+//   console.log("moveUp");
+//   console.log("moveUp");
+//   console.log("moveRight");
+//   console.log("moveRight");
+//   console.log("buy " + bottles + " bottles of milk");
+//   console.log("moveLeft");
+//   console.log("moveLeft");
+//   console.log("moveDown");
+//   console.log("moveDown");
+//   console.log("moveDown");
+//   console.log("moveDown");
+//   console.log("moveLeft");
+//   console.log("moveLeft");
+//   console.log("enterHouse");
+// }
+// getMilk(12);
+// 12 is a value from parameters.
+
+// challange 2 add money parameters.
+// function getMilk(money) {
+//   console.log("leaveHouse");
+//   console.log("moveRight");
+//   console.log("moveRight");
+//   console.log("moveUp");
+//   console.log("moveUp");
+//   console.log("moveUp");
+//   console.log("moveUp");
+//   console.log("moveRight");
+//   console.log("moveRight");
+//   var numberOfBottles = Math.floor(money / 1.5);
+//   console.log("buy " + numberOfBottles + " bottles of milk");
+//   console.log("moveLeft");
+//   console.log("moveLeft");
+//   console.log("moveDown");
+//   console.log("moveDown");
+//   console.log("moveDown");
+//   console.log("moveDown");
+//   console.log("moveLeft");
+//   console.log("moveLeft");
+//   console.log("enterHouse");
+// }
+// getMilk(12);
+
+// challange life weeks.
+// function lifeWeeks(age) {
+//   let yearsRemaining = 90 - age;
+//   // 90 is means we will live until 90 years old and minus the age parameters values.
+//   let days = yearsRemaining * 365;
+//   //   days in one year is 365.
+//   let weeks = yearsRemaining * 52;
+//   let months = yearsRemaining * 12;
+
+//   console.log(
+//     "You have " +
+//       days +
+//       " days, " +
+//       weeks +
+//       " weeks, and " +
+//       months +
+//       " months left."
+//   );
+// }
+// lifeWeeks(51);
+
+// output and return values
+// function getMilk(money) {
+//   console.log("leave house");
+//   console.log("move right");
+//   console.log("move right");
+//   console.log("move up");
+//   console.log("move up");
+//   console.log("move up");
+//   console.log("move right");
+//   console.log("move right");
+//   // how many bottls of milk we're to buy using that money.
+//   var numberOfBottles = Math.floor(money / 1.5);
+//   console.log("buy " + numberOfBottles + " bottles of milk");
+//   console.log("move left");
+//   console.log("move left");
+//   console.log("move down");
+//   console.log("move down");
+//   console.log("move down");
+//   console.log("move down");
+//   console.log("move left");
+//   console.log("move left");
+//   console.log("enter house");
+//   // at the end of the function, before closing brace, we can add add a return
+//   // keyword and specify that we want this function to output a number and the
+//   // number is going to be money modulo 1.5.
+//   return money % 1.5; //remainder of this division.
+//   // it will end up returning 0. but if value 4, will have a remainder of 1
+//   // and that number 1 will becomes the output of this function call.
+// }
+// //  so we can capture it and save it inside a variable called change.
+// // var change = getMilk(4);
+// // console.log(change);
+
+// // challange
+// function getMilk(money, costPerBottle) {
+//   console.log("leave house");
+//   console.log("move right");
+//   console.log("move right");
+//   console.log("move up");
+//   console.log("move up");
+//   console.log("move up");
+//   console.log("move right");
+//   console.log("move right");
+//   console.log("buy " + calcBottles(money, costPerBottle) + " bottles of milk");
+//   console.log("move left");
+//   console.log("move left");
+//   console.log("move down");
+//   console.log("move down");
+//   console.log("move down");
+//   console.log("move down");
+//   console.log("move left");
+//   console.log("move left");
+//   console.log("enter house");
+//   return calcChange(money, costPerBottle);
+// }
+// // we can calculate bootles.
+// function calcBottles(startingMoney, costPerBottle) {
+//   var numberOfBottles = Math.floor(startingMoney / costPerBottle);
+//   return numberOfBottles;
+// }
+// function calcChange(startingAmount, costPerBottle) {
+//   var change = startingAmount % costPerBottle;
+//   return change;
+// }
+// console.log("Hello master, here is your " + getMilk(10, 3) + " change.");
+
+// BMI calculator
+// //Create your function below this line.
+// //The first parameter should be the weight and the second should be the height.
+// function bmiCalculator(weight, height) {
+//   let bmi = weight / Math.pow(height, 2);
+//   return bmi;
+// }
+// var bmi = bmiCalculator(65, 1.8);
+// console.log(bmi);
+// /* If my weight is 65Kg and my height is 1.8m, I should be able to call your function like this:
+// var bmi = bmiCalculator(65, 1.8);
+// bmi should equal 20 when it's rounded to the nearest whole number.
+// */
+
+// BMI calculator2
+// //Create your function below this line.
+// //The first parameter should be the weight and the second should be the height.
+// function bmiCalculator(weight, height) {
+//   var bmi = weight / (height * height);
+//   return Math.round(bmi);
+// }
+// var bmi = bmiCalculator(65, 1.8);
+// console.log(bmi);
+// /* If my weight is 65Kg and my height is 1.8m, I should be able to call your function like this:
+// var bmi = bmiCalculator(65, 1.8);
+// bmi should equal 20 when it's rounded to the nearest whole number.
+// */
 
